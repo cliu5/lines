@@ -17,24 +17,16 @@ def draw_box(center,s,color):
     draw_line(center,center,center+h,center+l,screen,color)
     draw_line(center+h,center+l,center+h,center-l,screen,color)
     draw_line(center+h,center-l,center,center-s,screen,color)
+    #Lines of slope=undefined
     draw_line(center,center,center,center-s,screen,color)
     draw_line(center-h,center+l,center,center+s,screen,color)
     draw_line(center,center+s,center+h,center+l,screen,color)
-
-
-def draw_box(center,s,color):
-    h=int(math.floor(s*(3**.5)/2))
-    l=s/2
-    draw_line(center,center,center-h, center+l,screen,color)
-    draw_line(center-h,center+l, center-h, center-l,screen,color)
-    draw_line(center-h,center-l,center,center-s,screen,color)
-    draw_line(center,center,center+h,center+l,screen,color)
-    draw_line(center+h,center+l,center+h,center-l,screen,color)
-    draw_line(center+h,center-l,center,center-s,screen,color)
-    draw_line(center,center,center,center-s,screen,color)
-    draw_line(center-h,center+l,center,center+s,screen,color)
-    draw_line(center,center+s,center+h,center+l,screen,color)
-
+    draw_line(0,center,500,center,screen,color)
+    #Lines of slope=0
+    draw_line(0,center+100,500,center+100,screen,color)
+    draw_line(0,center+200,500,center+200,screen,color)
+    draw_line(0,center-100,500,center-100,screen,color)
+    draw_line(0,center-200,500,center-200,screen,color)
 
 
 j=10
